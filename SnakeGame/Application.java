@@ -5,7 +5,7 @@ public class Application
     {
         int width = 600;
         int height = 600;
-        int tileSize = 30;
+        int tileSize = 10;
         
         Renderer renderer = new Renderer(width, height, tileSize);
 

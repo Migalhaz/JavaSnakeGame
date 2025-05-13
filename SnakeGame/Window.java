@@ -1,3 +1,5 @@
+import java.awt.event.WindowEvent;
+
 import javax.swing.JFrame;
 
 public class Window
@@ -33,5 +35,13 @@ public class Window
 
         jFrame.add(_renderer);
         jFrame.pack();
+    }
+
+    
+    public void CloseWindow()
+    {
+        JFrame frame = ProvideJFrame();
+        WindowEvent closeWindowEvent = new WindowEvent(frame, WindowEvent.WINDOW_CLOSING);
+        frame.dispatchEvent(closeWindowEvent); 
     }
 }

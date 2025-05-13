@@ -2,7 +2,6 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Vector;
 
 public class SnakeHead extends GameObject implements ActionListener
 {
@@ -12,8 +11,8 @@ public class SnakeHead extends GameObject implements ActionListener
     boolean _moveInputEnabled;
 
     public SnakeHead(int x, int y, Color objectColor) {
-        _moveDirection = new Vector2(1, 0);
         super(x, y, objectColor);
+        _moveDirection = new Vector2(1, 0);
         _snakeSize = 0;
         _body = new ArrayList<SnakeBody>();
         _moveInputEnabled = true;

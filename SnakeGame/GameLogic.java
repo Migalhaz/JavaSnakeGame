@@ -117,7 +117,9 @@ public class GameLogic implements ActionListener, KeyListener
 
     public void GameOver()
     {
-
+        _gameLoop.stop();
+        System.out.println(String.format("Obrigado por jogar! Você fez: %d pontos!", _snakeHead._snakeSize));
+        _window.CloseWindow();
     }
 
     @Override
